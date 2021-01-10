@@ -79,7 +79,7 @@ const IndexPage = () => {
             <section>
                 <div  className='container'>
                     <div className='row g-4 justify-content-center'>
-                         <div className="col-lg-11 text-left pt-md-4">
+                         <div className="col-lg-11 text-left pt-4">
 
                         <p className="title_section">Comprometidos de principio a ﬁn</p>
                     </div>

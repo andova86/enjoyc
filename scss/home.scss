@@ -8,6 +8,11 @@
 
 -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 74% 97%, 52% 95%, 25% 97%, 0 100%);
 clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 74% 97%, 52% 95%, 25% 97%, 0 100%);
+
+  @include media-breakpoint-down(md) {
+   clip-path: none;
+padding-bottom: 20px;
+  }
 }
 
 .viaje_list {
@@ -24,6 +29,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 74% 97%, 52% 95%, 25% 97%, 0 100%)
   @include media-breakpoint-down(md) {
     overflow: scroll !important;
     scroll-behavior: smooth;
+     justify-content: start;
 
   }
 
@@ -117,14 +123,15 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 74% 97%, 52% 95%, 25% 97%, 0 100%)
   flex-wrap: nowrap;
   overflow: hidden;
   justify-content: center;
-  column-gap: 55px;
-  gap: 10px;
+
+  gap: 50px;
 
 
   @include media-breakpoint-down(md) {
     overflow: scroll !important;
     scroll-behavior: smooth;
     justify-content: flex-start;
+    gap: 20px;
   }
 
 }
