@@ -1,0 +1,291 @@
+
+.viaje_card {
+  display: flex;
+  padding: 15px;
+  flex-flow: row;
+  background: #FFFFFF;
+  border-radius: 10px;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 195px;
+  height: 72px;
+  margin-right: 10px;
+   -webkit-transition : border 500ms ease-out;
+  -moz-transition : border 500ms ease-out;
+  -o-transition : border 500ms ease-out;
+  transition : border 500ms ease-out;
+  border: 0;
+
+  &:hover {
+    border: 1px solid $secondary;
+    cursor: pointer;
+  }
+
+  &:active {
+    border: 1px solid $secondary !important;
+  }
+
+  .img-card {
+    width: 25px;
+    height: 25px;
+    object-position: top;
+    object-fit: cover;
+
+  }
+
+  &_body {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-left: 10px;
+
+    .text_v {
+      font-size: 14px;
+      color: #8e919b;
+      margin-bottom: 0;
+    }
+
+    .title_v {
+      font-weight: bold;
+      margin-bottom: 0;
+      color: #3864a9;
+    }
+  }
+}
+
+.destino_card {
+
+  display: flex;
+  flex: 0 0 auto;
+  position: relative;
+  height: 272px;
+  border-radius: 15px;
+  width: 196px;
+  margin-right: 22px;
+  opacity: 1;
+  transition: all 0.5s ease;
+
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  &_body {
+    height: 49px;
+    background-color: rgba(13, 39, 76, 0.65);
+    width: 100%;
+    padding: 5px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    .text_d {
+      font-size: 11px;
+      color: white;
+      margin-bottom: 0;
+    }
+
+    .title_d {
+      font-weight: bold;
+      margin-bottom: 0;
+      color: white;
+      font-size: 14px;
+    }
+
+  }
+
+}
+
+.destino_card_s {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  max-width: 200px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  margin-right: 22px;
+
+
+  &:hover {
+    background-color: $primary !important;
+
+    .destino_card_s_title {
+      color: white !important;
+    }
+  }
+
+  padding: 15px;
+
+  &_title {
+
+    color: $secondary;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+}
+
+.comprometido_card {
+
+  background-color: #FFFFFF;
+  padding: 15px;
+  display: grid;
+  grid-gap: 10px;
+  width: 100%;
+  height: 210px;
+  grid-template-columns: 310px;
+  grid-template-rows: 0.5fr 0.5fr 1fr;
+  grid-template-areas: "image" "title" "text";
+  box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2) ;
+  overflow: hidden;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+
+  &_header {
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+
+
+    img {
+
+      border-radius: 50%;
+      width: 32px !important;
+      height: 32px !important;
+
+
+    }
+
+  }
+
+
+  &_body {
+
+
+    .comprometido_card_title {
+      grid-area: title;
+      color: $primary;
+      font-weight: bolder;
+      text-align: center;
+
+      margin-bottom: 5px;
+      font-size: 16px;
+
+    }
+
+    .comprometido_card_text {
+      grid-area: text;
+      color: $primary;
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 0;
+
+    }
+  }
+
+
+}
+
+.categoria_card{
+
+  display: flex;
+
+
+  flex: 0 0 auto;
+
+
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  width: 80px;
+   box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2) ;
+
+  border: 1px solid $primary;
+
+  &:hover,&:focus{
+     background-color: $primary !important;
+
+  }
+
+
+  img{
+    width: 32px;
+    height: 32px;
+  }
+
+  &_title{
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+
+  }
+
+
+}
+
+.destacado_card {
+
+  background-color: #FFFFFF;
+  padding: 15px;
+  display: grid;
+  grid-gap: 10px;
+  width: 100%;
+  height: 210px;
+  grid-template-columns: 310px;
+  grid-template-rows: 0.5fr 0.5fr 1fr;
+  grid-template-areas: "image" "title" "text";
+  box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2) ;
+  overflow: hidden;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+
+  &_header {
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+
+
+    img {
+
+      border-radius: 50%;
+      width: 100% !important;
+      height: 100% !important;
+
+
+    }
+
+  }
+
+
+  &_body {
+
+
+    .comprometido_card_title {
+      grid-area: title;
+      color: $primary;
+      font-weight: bolder;
+      text-align: center;
+
+      margin-bottom: 5px;
+      font-size: 16px;
+
+    }
+
+    .comprometido_card_text {
+      grid-area: text;
+      color: $primary;
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 0;
+
+    }
+  }
+
+
+}

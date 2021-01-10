@@ -1,0 +1,146 @@
+.container_home {
+
+  border-radius: 20px;
+
+  background: #F5F8FA;
+  padding-top: 20px;
+  padding-bottom: 100px;
+
+-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 74% 97%, 52% 95%, 25% 97%, 0 100%);
+clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 74% 97%, 52% 95%, 25% 97%, 0 100%);
+}
+
+.viaje_list {
+
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+
+  justify-content: center;
+
+  padding-bottom: 20px;
+
+  @include media-breakpoint-down(md) {
+    overflow: scroll !important;
+    scroll-behavior: smooth;
+
+  }
+
+}
+
+.tarjeta_cuba {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+
+  &-title {
+    color: $secondary;
+    font-size: 35px;
+    margin-bottom: 0px;
+
+  }
+
+  &-percent {
+    color: $primary;
+    font-size: 91px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+    line-height: normal;
+
+     @include media-breakpoint-down(md) {
+      font-size: calc(3em + 1vw) !important;
+    }
+
+  }
+
+  &-text {
+    color: $primary;
+    font-size: calc(2em + 1vw);
+
+    @include media-breakpoint-down(sm) {
+      font-size: calc(1.5em + 1vw) !important;
+    }
+
+  }
+
+  &-desc {
+    font-size: calc(1em + 1vw);
+    line-height: 32px;
+    color: $secondary;
+    max-width: 480px;
+
+    @include media-breakpoint-down(sm) {
+      font-size: calc(0.8em + 1vw) !important;
+    }
+
+
+  }
+
+  button {
+    max-width: 150px;
+  }
+
+}
+
+.container_carousel
+{
+  display: flex;
+  justify-content: center;
+  max-width: 85%;
+}
+
+.react-multiple-carousel__arrow--left
+{
+  left: 0 !important;
+}
+
+.react-multiple-carousel__arrow--right
+{
+  right: 0 !important;
+}
+
+.text_deco_svg{
+  text-decoration: underline lightsalmon;
+}
+
+.underline {
+  border-bottom: 3px solid $warning;
+  border-image: linear-gradient(45deg, rgba(232,146,31,1), rgb(250,255,150)) 1;
+
+}
+
+.category_list {
+
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  justify-content: center;
+  column-gap: 55px;
+  gap: 10px;
+
+
+  @include media-breakpoint-down(md) {
+    overflow: scroll !important;
+    scroll-behavior: smooth;
+    justify-content: flex-start;
+  }
+
+}
+
+.category_title
+{
+  color: $primary;
+  font-size: 72px;
+  margin-bottom: 0;
+  line-height: normal;
+}
+
+.category_subtitle
+{
+  color: $secondary;
+  font-size: 48px;
+  margin-bottom: 0;
+  line-height: normal;
+}

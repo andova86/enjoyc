@@ -1,0 +1,43 @@
+// Change the primary colour
+
+$primary : #0F63AD;
+$secondary : #575E7B;
+$breadcrumb-divider: quote(">");
+$font-family-sans-serif:
+  Helvetica Neue #{"/* rtl:insert:Arabic */"},
+  // Safari for macOS and iOS (San Francisco)
+  -apple-system,
+  // Chrome < 56 for macOS (San Francisco)
+  BlinkMacSystemFont,
+  // Windows
+  "Montserrat",
+  // Android
+  Roboto,
+  // Basic web fallback
+  Arial,
+  // Linux
+  "Noto Sans",
+  // Sans serif fallback
+  sans-serif,
+  // Emoji fonts
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+$input-btn-focus-box-shadow: none;
+$input-btn-focus-width: 0;
+[type=button]:focus{
+  box-shadow: none !important;
+  outline: transparent !important;
+}
+
+.title_section{
+  font-size: 22px;
+  font-weight: 400;
+  color:  #232230
+;
+
+}
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+@import "cards";
+@import "home";
