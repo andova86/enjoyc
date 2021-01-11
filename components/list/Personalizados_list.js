@@ -20,7 +20,7 @@ function Personalizado_list({text}) {
         },
         mobile: {
             breakpoint: {max: 464, min: 331},
-            items: 1.2,
+            items: 1.3,
 
         },
         mini_mobile: {
@@ -43,10 +43,10 @@ function Personalizado_list({text}) {
 
 
             ssr={true} // means to render carousel on server-side.
-            infinite={true}
+            infinite={false}
             //autoPlay={this.props.deviceType !== "mobile"}
             autoPlaySpeed={5000}
-            keyBoardControl={true}
+            //keyBoardControl={true}
 
 
             containerClass="container"
