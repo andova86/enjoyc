@@ -151,3 +151,48 @@ padding-bottom: 20px;
   margin-bottom: 0;
   line-height: normal;
 }
+.font-10
+{
+  font-size: 10pt;
+}
+
+
+.destacado_list {
+
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  justify-content: start;
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+
+  gap: 10px;
+
+
+
+  @include media-breakpoint-down(md) {
+    overflow: scroll !important;
+    scroll-behavior: smooth;
+    justify-content: flex-start;
+    gap: 20px;
+
+  }
+
+}
+
+
+.bg-blue-light
+{
+     background: #F5F8FA;
+
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 74% 97%, 52% 95%, 25% 97%, 0 100%);
+clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 74% 97%, 52% 95%, 25% 97%, 0 100%);
+
+  @include  media-breakpoint-down(sm)
+  {
+     clip-path: none;
+padding-bottom: 20px;
+  }
+}

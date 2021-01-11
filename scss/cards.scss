@@ -10,10 +10,10 @@
   width: 195px;
   height: 72px;
   margin-right: 10px;
-   -webkit-transition : border 500ms ease-out;
-  -moz-transition : border 500ms ease-out;
-  -o-transition : border 500ms ease-out;
-  transition : border 500ms ease-out;
+  -webkit-transition: border 500ms ease-out;
+  -moz-transition: border 500ms ease-out;
+  -o-transition: border 500ms ease-out;
+  transition: border 500ms ease-out;
   border: 0;
 
   &:hover {
@@ -137,7 +137,7 @@
   grid-template-columns: 310px;
   grid-template-rows: 0.5fr 0.5fr 1fr;
   grid-template-areas: "image" "title" "text";
-  box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2) ;
+  box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
   border-radius: 10px;
   justify-content: center;
@@ -188,7 +188,7 @@
 
 }
 
-.categoria_card{
+.categoria_card {
 
   display: flex;
 
@@ -203,22 +203,29 @@
   background-color: #FFFFFF;
   border-radius: 20px;
   width: 80px;
-   box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2) ;
+  box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2);
 
   border: 1px solid $primary;
 
-  &:hover,&:focus{
-     background-color: $primary !important;
+  .active {
+
+    color: white;
+    background-color: $secondary !important;
+
+  }
+
+  &:hover, &:focus {
+    background-color: $primary !important;
 
   }
 
 
-  img{
+  img {
     width: 32px;
     height: 32px;
   }
 
-  &_title{
+  &_title {
     padding-top: 10px;
     font-size: 16px;
     font-weight: normal;
@@ -232,61 +239,99 @@
 .destacado_card {
 
   background-color: #FFFFFF;
-  padding: 15px;
+  margin-right: 10px;
   display: grid;
-  grid-gap: 10px;
-  width: 100%;
-  height: 210px;
-  grid-template-columns: 310px;
-  grid-template-rows: 0.5fr 0.5fr 1fr;
-  grid-template-areas: "image" "title" "text";
-  box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2) ;
+  width: 193px;
+  height: 267px;
+  grid-template-columns: 193px;
+  grid-template-rows: 155px 70px 42px;
+  grid-template-areas: "header" "body" "footer";
+  box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
   border-radius: 10px;
   justify-content: center;
   align-items: center;
 
+  @include media-breakpoint-down(sm){
+    margin-right: 20px !important;
+  }
+
   &_header {
-    grid-area: image;
+    grid-area: header;
+    align-self: start;
     display: flex;
     justify-content: center;
 
-
-    img {
-
-      border-radius: 50%;
-      width: 100% !important;
-      height: 100% !important;
-
-
-    }
 
   }
 
 
   &_body {
+    padding: 10px;
+
+    grid-area: body;
+    align-self: flex-start;
+
+    .destacado_card_place {
+
+      &_title {
+
+        color: $dark;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 0;
+
+      }
+
+      &_subtitle {
+
+        color: $gray-600;
+        padding-bottom: 5px;
 
 
-    .comprometido_card_title {
-      grid-area: title;
-      color: $primary;
-      font-weight: bolder;
-      text-align: center;
-
-      margin-bottom: 5px;
-      font-size: 16px;
-
+        font-size: 11pt;
+        margin-bottom: 0;
+      }
     }
 
-    .comprometido_card_text {
-      grid-area: text;
-      color: $primary;
-      font-size: 12px;
-      text-align: center;
+
+  }
+
+  &_footer {
+
+    grid-area: footer;
+    align-self: end;
+    padding-left: 10px;
+    padding-right: 10px;
+     border-top: 2px solid #dee2e6 !important;
+
+
+
+
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &_text {
+      text-transform: uppercase;
+      font-size: 9pt;
+      color: $warning;
       margin-bottom: 0;
 
     }
+
+    &_value {
+
+      font-size: 18pt;
+      font-weight: bold;
+      color: $dark;
+      margin-bottom: 0;
+    }
   }
 
-
 }
+
+
+
+
