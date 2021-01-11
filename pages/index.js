@@ -229,16 +229,22 @@ const IndexPage = () => {
                 </div>
             </section>
 
-             <section>
+             <section className='py-4'>
                 <div className='container'>
                     <div className='row justify-content-center g-4'>
                         <div className='col-12'>
 
                             <div className='row g-4 justify-content-center '>
 
-                                <div className="col-12 text-center pt-4 ">
+                                <div className="col-12 text-center pt-4 d-flex justify-content-between container">
 
                                     <p className="title_section mb-0">Viajes Personalizados</p>
+                                     <Link href="/" >
+                                        <a className="text-decoration-none link-primary d-none d-md-block">
+                                            Ver todos »
+
+                                        </a>
+                                    </Link>
                                 </div>
 
                                 <div className='col-12 '>

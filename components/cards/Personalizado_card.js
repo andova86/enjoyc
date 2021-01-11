@@ -65,8 +65,15 @@ const Destacado_card = (props) => {
 
                      <div className='personalizado_card_footer'>
 
+                         <div className='personalizado_card_footer_icons'>
+                             <img src={'/svg/plane.svg'} alt={"plane"}/>
+                              <img src={'/svg/plane.svg'} alt={"plane"}/>
+                               <img src={'/svg/plane.svg'} alt={"plane"}/>
+                         </div>
 
-                            <p className='personalizado_card_footer_text'> <span className='fw-lighter font-10'>USD</span> {props.cant_comment}</p>
+
+                            <p className='personalizado_card_footer_text'>
+                                <span className='fw-lighter font-10'><img src={'/svg/plane.svg'} alt={"plane"} width={16} /></span> {props.cant_comment}</p>
                         </div>
 
 

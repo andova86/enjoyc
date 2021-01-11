@@ -16,23 +16,30 @@ function Personalizado_list({text}) {
         },
         tablet: {
             breakpoint: {max: 1024, min: 464},
-            items: 2
+            items: 2.5
         },
         mobile: {
-            breakpoint: {max: 464, min: 0},
-            items: 1.3,
+            breakpoint: {max: 464, min: 331},
+            items: 1.2,
+
+        },
+        mini_mobile: {
+            breakpoint: {max: 330, min: 0},
+            items: 1,
 
         }
     };
 
     return (
-        <Carousel
+
+        <div className='pb-5'>
+            <Carousel
             swipeable={true}
             draggable={true}
             showDots={false}
             autoPlay={true}
             centerMode={false}
-            arrows={false}
+            arrows={true}
 
 
             ssr={true} // means to render carousel on server-side.
@@ -104,8 +111,49 @@ function Personalizado_list({text}) {
 
             </div>
 
+                 <div>
+
+                <Personalizado_card
+                    img={'/hotel.png'}
+                    title={'Vive Cuba al descubierto desde la raíz'}
+                    subtitle={'7 días en Cuba'}
+                    value={'80'}
+                    text={'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt'}
+                    cant_comment={'24'}
+                    position={'La Habana, Varadero, Remedios'}
+                    img_author={'/hotel.png'}
+                    name_author={'Giselle Pérez'}
+                    desc_author={'Especialista en viajes clásicos y grupales'}
+                />
+
+
+            </div>
+
+                 <div>
+
+                <Personalizado_card
+                    img={'/hotel.png'}
+                    title={'Vive Cuba al descubierto desde la raíz'}
+                    subtitle={'7 días en Cuba'}
+                    value={'80'}
+                    text={'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt'}
+                    cant_comment={'24'}
+                    position={'La Habana, Varadero, Remedios'}
+                    img_author={'/hotel.png'}
+                    name_author={'Giselle Pérez'}
+                    desc_author={'Especialista en viajes clásicos y grupales'}
+                />
+
+
+            </div>
+
 
         </Carousel>
+        </div>
+
+
+
+
 
 
     )

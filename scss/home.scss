@@ -1,3 +1,26 @@
+.main{
+  min-height: 100vh;
+}
+
+$input-btn-focus-box-shadow: none;
+$input-btn-focus-width: 0;
+[type=button]:focus{
+  box-shadow: none !important;
+  outline: transparent !important;
+}
+
+.title_section{
+  font-size: 22px;
+  font-weight: 400;
+  color:  #232230
+;
+
+}
+
+
+
+
+
 .container_home {
 
   border-radius: 20px;
@@ -122,7 +145,7 @@ padding-bottom: 20px;
   flex-flow: row;
   flex-wrap: nowrap;
   overflow: hidden;
-  justify-content: flex-start;
+  justify-content: center;
 
   gap: 50px;
 
@@ -130,7 +153,7 @@ padding-bottom: 20px;
   @include media-breakpoint-down(md) {
     overflow: scroll !important;
     scroll-behavior: smooth;
-    justify-content: flex-start;
+    justify-content: flex-start !important;
     gap: 10px;
   }
 

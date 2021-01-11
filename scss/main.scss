@@ -22,20 +22,8 @@ $font-family-sans-serif:
   // Emoji fonts
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 
-$input-btn-focus-box-shadow: none;
-$input-btn-focus-width: 0;
-[type=button]:focus{
-  box-shadow: none !important;
-  outline: transparent !important;
-}
 
-.title_section{
-  font-size: 22px;
-  font-weight: 400;
-  color:  #232230
-;
 
-}
 
 @import "~bootstrap/scss/bootstrap.scss";
 

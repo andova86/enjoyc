@@ -1,3 +1,81 @@
+.footer_div{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  gap: 20px;
+
+   @include  media-breakpoint-down(sm)
+     {
+       flex-flow: column !important;
+     justify-content: center;
+     }
+
+  &_boxsocial
+  {
+    display: flex;
+     flex-flow: column;
+    justify-content: start;
+
+
+     a{
+        @include  media-breakpoint-down(sm)
+     {
+
+     text-align: center !important;
+     }
+
+      }
+
+    &_social{
+       display: flex;
+     flex-flow: row;
+
+       @include  media-breakpoint-down(sm)
+     {
+
+     justify-content: center !important;
+     }
+
+      gap: 10px;
+        a{
+          img{
+            width: 16px;
+            height: 16px;
+
+          }
+
+        }
+
+
+    }
+
+  }
+
+   &_link{
+      display: flex;
+      flex-flow: column;
+     flex-wrap: wrap;
+      gap: 5px;
+     margin-right: 30px;
+
+      &_title{
+        font-weight: bolder;
+        color: $primary;
+
+      }
+
+      &_country{
+        font-weight: normal;
+
+      }
+     @include  media-breakpoint-down(sm)
+     {
+
+     }
+    }
+
+}
+
 
 .viaje_card {
   display: flex;
@@ -208,14 +286,9 @@
 
   border: 1px solid $primary;
 
-  .active {
 
-    color: white;
-    background-color: $secondary !important;
 
-  }
-
-  &:hover, &:focus {
+  &:hover, &:focus , &:active {
     background-color: $primary !important;
 
   }
@@ -521,11 +594,19 @@
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
+    border-bottom-right-radius: 20px;
+     border-bottom-left-radius: 20px;
 
 
     &_icons {
       display: flex;
       gap: 10px;
+
+      img{
+        margin-right: 2px;
+        width: 16px;
+        height: 16px;
+      }
 
 
     }
