@@ -1,4 +1,4 @@
-import Destino_card_s from "../home/destino_card_s";
+import Destino_card_s from "../cards/destino_card_s";
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -40,16 +40,16 @@ function Carrousel({text}) {
             //autoPlay={this.props.deviceType !== "mobile"}
             autoPlaySpeed={5000}
             keyBoardControl={true}
-            customTransition="all .8 ease"
 
 
 
-            transitionDuration={500}
+
+
             containerClass="container"
-           // removeArrowOnDeviceType={["tablet", "mobile"]}
+            removeArrowOnDeviceType={["tablet", "mobile"]}
             //deviceType={this.props.deviceType}
             dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px"
+            //itemClass="border-primary"
             responsive={responsive}
 
         >

@@ -10,7 +10,7 @@ const Destino_card_s = (props) => {
 
         <Link href="/about" >
             <a className="text-decoration-none " >
-                <div className="destino_card_s ">
+                <div className="destino_card_s border border-1">
 
 
                         <p className="destino_card_s_title">

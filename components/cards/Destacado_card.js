@@ -11,13 +11,21 @@ const Destacado_card = (props) => {
         <Link href="/about">
             <a className="text-decoration-none ">
                 <div className="destacado_card">
-                    <div className='destacado_card_header'>
+                    <div className='destacado_card_header position-relative'>
                         <Image
                             src={props.img}
                             alt="Picture of the author"
                             width={193}
                              height={155}
                         />
+                        <div className='position-absolute top-0 end-0'>
+                            <Image
+                            src={'/svg/start5.svg'}
+                            alt="start"
+                            width={50}
+                             height={50}
+                        />
+                        </div>
 
 
                     </div>

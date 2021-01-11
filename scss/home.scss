@@ -122,7 +122,7 @@ padding-bottom: 20px;
   flex-flow: row;
   flex-wrap: nowrap;
   overflow: hidden;
-  justify-content: center;
+  justify-content: flex-start;
 
   gap: 50px;
 
@@ -131,7 +131,7 @@ padding-bottom: 20px;
     overflow: scroll !important;
     scroll-behavior: smooth;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 10px;
   }
 
 }
@@ -195,4 +195,10 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 74% 97%, 52% 95%, 25% 97%, 0 100%)
      clip-path: none;
 padding-bottom: 20px;
   }
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }

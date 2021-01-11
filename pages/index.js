@@ -1,14 +1,16 @@
-import Viajes from "../components/home/viajes";
+import Viajes from "../components/cards/viajes";
 import Layout from "../components/layout";
 import Image from "next/dist/client/image";
-import Destino_card from "../components/home/destino_card";
+import Destino_card from "../components/cards/destino_card";
 
 import '@splidejs/splide/dist/css/themes/splide-skyblue.min.css';
 import Carousel from "../components/base/Carousel";
-import Comprometido_card from "../components/home/Comprometido_card";
-import Categoria_card from "../components/home/Categoria_card";
-import Destacado_card from "../components/home/Destacado_card";
+import Comprometido_card from "../components/cards/Comprometido_card";
+import Categoria_card from "../components/cards/Categoria_card";
+import Destacado_card from "../components/cards/Destacado_card";
 import Link from 'next/link'
+import Personalizado_card from "../components/cards/Personalizado_card";
+import Personalizado_list from "../components/list/Personalizados_list";
 
 
 const IndexPage = () => {
@@ -122,7 +124,6 @@ const IndexPage = () => {
                 </div>
             </section>
 
-
             <section className={'py-4'}>
 
 
@@ -228,6 +229,32 @@ const IndexPage = () => {
                 </div>
             </section>
 
+             <section>
+                <div className='container'>
+                    <div className='row justify-content-center g-4'>
+                        <div className='col-12'>
+
+                            <div className='row g-4 justify-content-center '>
+
+                                <div className="col-12 text-center pt-4 ">
+
+                                    <p className="title_section mb-0">Viajes Personalizados</p>
+                                </div>
+
+                                <div className='col-12 '>
+                                    <Personalizado_list/>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
 
             <section>
                 <div className='container'>
