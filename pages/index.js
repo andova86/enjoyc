@@ -23,12 +23,12 @@ const IndexPage = () => {
             <div className="container container_home ">
                 <div className="viaje_list">
 
-                    <Viajes img="/me.svg" text={"Viaje"} title={"Fly & Drive"}/>
-                    <Viajes img="/me.svg" text={"Viaje"} title={"Lujo a Cuba"}/>
-                    <Viajes img="/me.svg" text={"Viaje"} title={"LGBTI a Cuba "}/>
-                    <Viajes img="/me.svg" text={"Viaje"} title={"Accesibles "}/>
-                    <Viajes img="/me.svg" text={"Viaje"} title={"Grupos y Eventos"}/>
-                    <Viajes img="/me.svg" text={"Viaje"} title={"Experiencias"}/>
+                    <Viajes img="/svg/viajes-fly-drive.svg" text={"Viaje"} title={"Fly & Drive"}/>
+                    <Viajes img="/svg/viajes-lujo-cuba.svg" text={"Viaje"} title={"Lujo a Cuba"}/>
+                    <Viajes img="/svg/viajes-LGBTI-cuba.svg" text={"Viaje"} title={"LGBTI a Cuba "}/>
+                    <Viajes img="/svg/viajes-accesible-cuba.svg" text={"Viaje"} title={"Accesibles "}/>
+                    <Viajes img="/svg/viajes-grupo-cuba.svg" text={"Viaje"} title={"Grupos y Eventos"}/>
+                    <Viajes img="/svg/viajes-experiencia-cuba.svg" text={"Viaje"} title={"Experiencias"}/>
 
                 </div>
 
@@ -93,7 +93,7 @@ const IndexPage = () => {
                             <div className="row g-4 justify-content-center gx-2">
                                 <div className="col-lg-4 col-md-6 col-12">
 
-                                    <Comprometido_card img="/capitolio.png"
+                                    <Comprometido_card img="/svg/quote.svg"
                                                        text={"Nuestro equipo se encuentra permanentemente operativo para darle una respuesta inmediata ante cualquier necesidad. Le ofrecemos un servicio totalmente personalizado, ajustado a sus necesidades, aportándole una cotización de su viaje en tiempo real."}
                                                        title={"Cotización inmediata "}/>
 
@@ -102,7 +102,7 @@ const IndexPage = () => {
                                 <div className="col-lg-4 col-md-6 col-12">
 
                                     <Comprometido_card
-                                        img="/capitolio.png"
+                                        img="/svg/24-services.svg"
                                         text={"Nunca estará solo. Le ofrecemos un servicio de atención telefónica 24 horas en destino, a través de nuestro teléfono: +53 5 5923956. Mediante el cual, le acompañaremos en todo momento, para cubrir cualquier consulta o contingencia que pudiese derivarse, durante su estancia."}
                                         title={"Atención telefónica 24h"}
                                     />
@@ -111,7 +111,7 @@ const IndexPage = () => {
                                 <div className="col-lg-4 col-md-6 col-12">
 
                                     <Comprometido_card
-                                        img="/capitolio.png"
+                                        img="/svg/all-flexibility.svg"
                                         text={"Estamos a su servicio. Antes y durante su estancia, podrá solicitarnos cualquier detalle que requiera: reservas de restaurantes, servicio de baby sister, impresión de tarjetas, peticiones especiales… todo lo que usted sueñe, durante su visita lo haremos realidad. 100% garantizado."}
                                         title={"Flexibilidad total"}
                                     />
@@ -138,13 +138,13 @@ const IndexPage = () => {
                         <div className='col-12'>
 
                             <div className='category_list pt-md-5'>
-                                <Categoria_card img={'/me.svg'} title={'Hoteles'}/>
-                                <Categoria_card img={'/me.svg'} title={'Casas'}/>
-                                <Categoria_card img={'/me.svg'} title={'Autos'}/>
-                                <Categoria_card img={'/me.svg'} title={'Traslados'}/>
-                                <Categoria_card img={'/me.svg'} title={'Vuelos'}/>
-                                <Categoria_card img={'/me.svg'} title={'Paquetes'}/>
-                                <Categoria_card img={'/me.svg'} title={'Excursiones'}/>
+                                <Categoria_card img={'/svg/hotel.svg'} title={'Hoteles'}/>
+                                <Categoria_card img={'/svg/hotel.svg'} title={'Casas'}/>
+                                <Categoria_card img={'/svg/hotel.svg'} title={'Autos'}/>
+                                <Categoria_card img={'/svg/hotel.svg'} title={'Traslados'}/>
+                                <Categoria_card img={'/svg/hotel.svg'} title={'Vuelos'}/>
+                                <Categoria_card img={'/svg/hotel.svg'} title={'Paquetes'}/>
+                                <Categoria_card img={'/svg/hotel.svg'} title={'Excursiones'}/>
 
                             </div>
 
@@ -262,7 +262,18 @@ const IndexPage = () => {
                 </div>
             </section>
 
-            <section>
+
+             <section className='py-4'>
+                <div className='container'>
+                    <div className='row justify-content-center g-4'>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section className='py-4'>
                 <div className='container'>
                     <div className='row justify-content-center g-4'>
 

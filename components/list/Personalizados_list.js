@@ -37,7 +37,7 @@ function Personalizado_list({text}) {
             swipeable={true}
             draggable={true}
             showDots={false}
-            autoPlay={true}
+            autoPlay={false}
             centerMode={false}
             arrows={true}
 
@@ -67,7 +67,7 @@ function Personalizado_list({text}) {
                     text={'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt'}
                     cant_comment={'24'}
                     position={'La Habana, Varadero, Remedios, Cienfuegos'}
-                    img_author={'/hotel.png'}
+                    img_author={'/avatar-1.jpg'}
                     name_author={'Giselle Pérez'}
                     desc_author={'Especialista en viajes clásicos y grupales'}
                 />
@@ -85,7 +85,7 @@ function Personalizado_list({text}) {
                     text={'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt'}
                     cant_comment={'24'}
                     position={'La Habana, Varadero, Remedios'}
-                    img_author={'/hotel.png'}
+                    img_author={'/avatar-1.jpg'}
                     name_author={'Giselle Pérez'}
                     desc_author={'Especialista en viajes clásicos y grupales'}
                 />
@@ -103,7 +103,7 @@ function Personalizado_list({text}) {
                     text={'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt'}
                     cant_comment={'24'}
                     position={'La Habana, Varadero, Remedios'}
-                    img_author={'/hotel.png'}
+                    img_author={'/avatar-1.jpg'}
                     name_author={'Giselle Pérez'}
                     desc_author={'Especialista en viajes clásicos y grupales'}
                 />
@@ -121,7 +121,7 @@ function Personalizado_list({text}) {
                     text={'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt'}
                     cant_comment={'24'}
                     position={'La Habana, Varadero, Remedios'}
-                    img_author={'/hotel.png'}
+                    img_author={'/avatar-1.jpg'}
                     name_author={'Giselle Pérez'}
                     desc_author={'Especialista en viajes clásicos y grupales'}
                 />
@@ -139,7 +139,7 @@ function Personalizado_list({text}) {
                     text={'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt'}
                     cant_comment={'24'}
                     position={'La Habana, Varadero, Remedios'}
-                    img_author={'/hotel.png'}
+                    img_author={'/avatar-1.jpg'}
                     name_author={'Giselle Pérez'}
                     desc_author={'Especialista en viajes clásicos y grupales'}
                 />

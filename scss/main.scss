@@ -3,29 +3,16 @@
 $primary : #0F63AD;
 $secondary : #575E7B;
 $breadcrumb-divider: quote(">");
-$font-family-sans-serif:
-  Helvetica Neue #{"/* rtl:insert:Arabic */"},
-  // Safari for macOS and iOS (San Francisco)
-  -apple-system,
-  // Chrome < 56 for macOS (San Francisco)
-  BlinkMacSystemFont,
-  // Windows
-  "Montserrat",
-  // Android
-  Roboto,
-  // Basic web fallback
-  Arial,
-  // Linux
-  "Noto Sans",
-  // Sans serif fallback
-  sans-serif,
-  // Emoji fonts
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 
 
+
+body {
+  font-family: 'Montserrat', sans-serif !important;
+}
 
 
 @import "~bootstrap/scss/bootstrap.scss";
 
 @import "cards";
 @import "home";
+@import "font";

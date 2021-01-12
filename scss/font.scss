@@ -1,0 +1,14 @@
+.mon-light{
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../public/fonts/Montserrat-Light.woff2') format('woff2'),
+        url('../public/fonts/Montserrat-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}

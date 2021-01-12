@@ -53,7 +53,7 @@ export default function Layout({children}) {
 
                                 </Link>
                                 <Link href="/">
-                                    <a>
+                                    <a className='link-dark'>
                                         <Image
                                             src="/svg/facebook_blue.svg"
                                             alt="logo"
@@ -159,7 +159,7 @@ export default function Layout({children}) {
                                 </Link>
 
                                 <Link href="/">
-                                    <a className='text-decoration-none footer_div_link_country'>
+                                    <a className='text-decoration-none footer_div_link_country '>
                                         Contact
                                     </a>
                                 </Link>

@@ -10,13 +10,13 @@ const Viajes = (props) => {
 
         <Link href="/about">
             <a className="text-decoration-none">
-                 <div className="viaje_card">
+                 <div className="viaje_card shadow ">
                 <Image
                     src={props.img}
                     alt="Picture of the author"
                     width={32}
                     height={32}
-                    className="img-card"
+
 
                 />
 

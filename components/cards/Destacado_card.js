@@ -43,7 +43,7 @@ const Destacado_card = (props) => {
                     </div>
 
                      <div className='destacado_card_footer'>
-                            <p className='destacado_card_footer_text'>{props.text}</p>
+                            <p className='destacado_card_footer_text mon-light'>{props.text}</p>
 
                             <p className='destacado_card_footer_value'> <span className='fw-lighter font-10'>USD</span> {props.value}</p>
                         </div>
