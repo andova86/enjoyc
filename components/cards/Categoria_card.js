@@ -18,15 +18,21 @@ const Categoria_card = (props) => {
         <Link href="/about" >
             <a className="text-decoration-none " >
                 <div className="categoria_card active" >
-                    <Image
+
+                    <div className='categoria_card_body'>
+                         <Image
                         src={props.img}
-                        alt="Picture of the author"
+                        alt={props.title}
                         width={32}
                         height={32}
+
                     />
+                    </div>
+
+                      <p className='categoria_card_title'>{props.title}</p>
                 </div>
 
-                 <p className={'categoria_card_title'}>{props.title}</p>
+
             </a>
 
 

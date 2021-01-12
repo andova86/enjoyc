@@ -11,6 +11,7 @@ import Destacado_card from "../components/cards/Destacado_card";
 import Link from 'next/link'
 import Personalizado_card from "../components/cards/Personalizado_card";
 import Personalizado_list from "../components/list/Personalizados_list";
+import Viajero_card from "../components/cards/Viajero_card";
 
 
 const IndexPage = () => {
@@ -20,7 +21,8 @@ const IndexPage = () => {
 
         <Layout>
 
-            <div className="container container_home ">
+            <section className="container container_home ">
+
                 <div className="viaje_list">
 
                     <Viajes img="/svg/viajes-fly-drive.svg" text={"Viaje"} title={"Fly & Drive"}/>
@@ -79,7 +81,7 @@ const IndexPage = () => {
 
 
                 </div>
-            </div>
+            </section>
 
             <section>
                 <div className='container'>
@@ -210,7 +212,7 @@ const IndexPage = () => {
                                         />
                                     </div>
                                 </div>
-                                <div className='col-12 text-center pb-sm-5 mt-0'>
+                                <div className='col-12 text-center pb-md-5 mt-0 mb-0'>
                                     <Link href="/">
                                         <a className="text-decoration-none link-primary">
                                             Ver todos los Hoteles »
@@ -229,16 +231,16 @@ const IndexPage = () => {
                 </div>
             </section>
 
-             <section className='py-4'>
+             <section >
                 <div className='container'>
                     <div className='row justify-content-center g-4'>
                         <div className='col-12'>
 
                             <div className='row g-4 justify-content-center '>
 
-                                <div className="col-12 text-center pt-4 d-flex justify-content-between container">
+                                <div className="col-12 text-center pt-md-4 d-flex justify-content-between container">
 
-                                    <p className="title_section mb-0">Viajes Personalizados</p>
+                                    <p className="title_section mb-0 text-center text-md-left">Viajes Personalizados</p>
                                      <Link href="/" >
                                         <a className="text-decoration-none link-primary d-none d-md-block">
                                             Ver todos »
@@ -263,7 +265,7 @@ const IndexPage = () => {
             </section>
 
 
-             <section className='py-4'>
+             <section >
                 <div className='container'>
                     <div className='row justify-content-center g-4'>
 
@@ -273,8 +275,55 @@ const IndexPage = () => {
             </section>
 
 
-            <section className='py-4'>
-                <div className='container'>
+            <section className='bg-viajero'>
+                <div className='container '>
+                    <div className='row justify-content-center g-4'>
+                        <div className='col-12'>
+                            <div className='viajero_list '>
+                                <Viajero_card
+                                    title={'Auténtica Cuba'}
+                                    text={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh uismod tincidunt ut laoreet dolore magna."}
+                                    name_author='José Luis Mederos'
+                                    date_author='Jun 20, 2021'
+                                    img_author={'/avatar-1.jpg'}
+
+                                />
+                                 <Viajero_card
+                                    title={'Criadero de Cocodrilos'}
+                                    text={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh uismod tincidunt ut laoreet dolore magna."}
+                                    name_author='José Luis Mederos'
+                                    date_author='Jun 20, 2021'
+                                    img_author={'/avatar-1.jpg'}
+
+                                />
+
+                                 <Viajero_card
+                                    title={'Sol y mar en Varadero'}
+                                    text={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh uismod tincidunt ut laoreet dolore magna."}
+                                    name_author='José Luis Mederos'
+                                    date_author='Jun 20, 2021'
+                                    img_author={'/avatar-1.jpg'}
+
+                                />
+
+                                 <Viajero_card
+                                    title={'Aventura Oriente de Cuba'}
+                                    text={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh uismod tincidunt ut laoreet dolore magna."}
+                                    name_author='José Luis Mederos'
+                                    date_author='Jun 20, 2021'
+                                    img_author={'/avatar-1.jpg'}
+
+                                />
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+              <section >
+                <div className='container d-none'>
                     <div className='row justify-content-center g-4'>
 
 
