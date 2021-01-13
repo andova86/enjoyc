@@ -11,7 +11,7 @@ const Destacado_card = (props) => {
         <Link href="/about">
             <a className="text-decoration-none ">
                 <div className="destacado_card">
-                    <div className='destacado_card_header position-relative'>
+                    <div className='destacado_card_header position-relative' key={props.id}>
                         <Image
                             src={props.img}
                             alt="Picture of the author"

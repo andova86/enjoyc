@@ -16,7 +16,7 @@ const BreadcrumbHome = (props) => {
                         <a className="link-primary text-decoration-none"><strong>Viajes a Cuba</strong> a la Medida </a>
                     </Link>
                 </li>
-                <li className="breadcrumb-item active text-primary" aria-current="page">{props.text}</li>
+                <li className="breadcrumb-item active text-primary d-none" aria-current="page">{props.text}</li>
             </ol>
         </nav>
 

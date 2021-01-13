@@ -8,7 +8,8 @@ const Navbar = () => {
         <div>
             <nav className="navbar navbar-expand-lg navbar-light ">
                 <div className="container">
-                    <div className="navbar-brand ">
+
+                    <div className="navbar-brand logo">
 
                         <Link href="/">
                             <Image
@@ -20,7 +21,7 @@ const Navbar = () => {
                         </Link>
                     </div>
 
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    <button className="navbar-toggler d-none" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"/>

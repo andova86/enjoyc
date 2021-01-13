@@ -65,15 +65,16 @@ const Destacado_card = (props) => {
 
                      <div className='personalizado_card_footer'>
 
-                         <div className='personalizado_card_footer_icons'>
-                             <img src={'/svg/plane.svg'} alt={"plane"}/>
-                              <img src={'/svg/plane.svg'} alt={"plane"}/>
-                               <img src={'/svg/plane.svg'} alt={"plane"}/>
+                         <div className='personalizado_card_footer_icons text-white'>
+                             <i className='icofont icofont-airplane text-white'/>
+                              <i className='icofont icofont-bed text-white'/>
+                              <i className='icofont icofont-car-alt-3 text-white'/>
                          </div>
 
 
                             <p className='personalizado_card_footer_text'>
-                                <span className='fw-lighter font-10'><img src={'/svg/comment.svg'} alt={"plane"} width={16} className={'pt-1'}/></span> {props.cant_comment}</p>
+                                <i className='icofont icofont-twitter text-white'/>
+                                 {props.cant_comment}</p>
                         </div>
 
 

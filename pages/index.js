@@ -12,9 +12,15 @@ import Link from 'next/link'
 import Personalizado_card from "../components/cards/Personalizado_card";
 import Personalizado_list from "../components/list/Personalizados_list";
 import Viajero_card from "../components/cards/Viajero_card";
+import DestacadosList from "../components/list/Destacados_list";
+
 
 
 const IndexPage = () => {
+
+
+
+
 
 
     return (
@@ -25,12 +31,12 @@ const IndexPage = () => {
 
                 <div className="viaje_list">
 
-                    <Viajes img="/svg/viajes-fly-drive.svg" text={"Viaje"} title={"Fly & Drive"}/>
-                    <Viajes img="/svg/viajes-lujo-cuba.svg" text={"Viaje"} title={"Lujo a Cuba"}/>
-                    <Viajes img="/svg/viajes-LGBTI-cuba.svg" text={"Viaje"} title={"LGBTI a Cuba "}/>
-                    <Viajes img="/svg/viajes-accesible-cuba.svg" text={"Viaje"} title={"Accesibles "}/>
+                    <Viajes img="/svg/viajes-fly-drive.svg" text={"Viaje"} title={"Fly & Drive"} />
+                    <Viajes img="/svg/viajes-lujo-cuba.svg" text={"Viaje"} title={"Lujo a Cuba"} />
+                    <Viajes img="/svg/viajes-LGBTI-cuba.svg" text={"Viaje"} title={"LGBTI a Cuba "} />
+                    <Viajes img="/svg/viajes-accesible-cuba.svg" text={"Viaje"} title={"Accesibles "} />
                     <Viajes img="/svg/viajes-grupo-cuba.svg" text={"Viaje"} title={"Grupos y Eventos"}/>
-                    <Viajes img="/svg/viajes-experiencia-cuba.svg" text={"Viaje"} title={"Experiencias"}/>
+                    <Viajes img="/svg/viajes-experiencia-cuba.svg" text={"Viaje"} title={"Experiencias"} />
 
                 </div>
 
@@ -139,14 +145,26 @@ const IndexPage = () => {
 
                         <div className='col-12'>
 
+
                             <div className='category_list pt-md-5'>
+
+
+                                <Categoria_card img={'/svg/hotel.svg'} title={'Hoteles'} ch={'yes'}/>
+                                <Categoria_card img={'/svg/hotel.svg'} title={'Casas'} ch={'no'}/>
+                                <Categoria_card img={'/svg/hotel.svg'} title={'Autos'} ch={'no'}/>
+                                <Categoria_card img={'/svg/hotel.svg'} title={'Traslados'} ch={'no'}/>
+                                <Categoria_card img={'/svg/hotel.svg'} title={'Vuelos'} ch={'no'}/>
+                                <Categoria_card img={'/svg/hotel.svg'} title={'Paquetes'} ch={'no'}/>
+                                <Categoria_card img={'/svg/hotel.svg'} title={'Excursiones'} ch={'no'}/>
+
+                               {/*
                                 <Categoria_card img={'/svg/hotel.svg'} title={'Hoteles'}/>
                                 <Categoria_card img={'/svg/hotel.svg'} title={'Casas'}/>
                                 <Categoria_card img={'/svg/hotel.svg'} title={'Autos'}/>
                                 <Categoria_card img={'/svg/hotel.svg'} title={'Traslados'}/>
                                 <Categoria_card img={'/svg/hotel.svg'} title={'Vuelos'}/>
                                 <Categoria_card img={'/svg/hotel.svg'} title={'Paquetes'}/>
-                                <Categoria_card img={'/svg/hotel.svg'} title={'Excursiones'}/>
+                                <Categoria_card img={'/svg/hotel.svg'} title={'Excursiones'}/>*/}
 
                             </div>
 
@@ -154,74 +172,9 @@ const IndexPage = () => {
 
                         <div className='col-12'>
 
-                            <div className='row g-4 justify-content-center bg-blue-light'>
+                            <DestacadosList name={"Hoteles"}/>
 
-                                <div className="col-12 text-center pt-4 ">
 
-                                    <p className="title_section mb-0">Hoteles destacados</p>
-                                </div>
-
-                                <div className='col-12 '>
-                                    <div className='destacado_list container-fluid'>
-                                        <Destacado_card
-                                            img={'/hotel.png'}
-                                            title={'Hotel Nacional de Cuba la isla Antillana '}
-                                            subtitle={'La Habana'}
-                                            value={'80'}
-                                            text={'Por noche'}
-                                        />
-
-                                        <Destacado_card
-                                            img={'/hotel.png'}
-                                            title={'Iberostart Costa Azul'}
-                                            subtitle={'Varadero'}
-                                            value={'87'}
-                                            text={'Por noche'}
-                                        />
-
-                                        <Destacado_card
-                                            img={'/hotel.png'}
-                                            title={'Manzana Kempinski'}
-                                            subtitle={'La Habana'}
-                                            value={'80'}
-                                            text={'Por noche'}
-                                        />
-
-                                        <Destacado_card
-                                            img={'/hotel.png'}
-                                            title={'Melia Las Morlas'}
-                                            subtitle={'La Habana'}
-                                            value={'80'}
-                                            text={'Por noche'}
-                                        />
-
-                                        <Destacado_card
-                                            img={'/hotel.png'}
-                                            title={'Hotel Nacional de Cuba la isla Antillana '}
-                                            subtitle={'La Habana'}
-                                            value={'80'}
-                                            text={'Por noche'}
-                                        />
-
-                                        <Destacado_card
-                                            img={'/hotel.png'}
-                                            title={'Hotel Nacional de Cuba la isla Antillana '}
-                                            subtitle={'La Habana'}
-                                            value={'80'}
-                                            text={'Por noche'}
-                                        />
-                                    </div>
-                                </div>
-                                <div className='col-12 text-center pb-md-5 mt-0 mb-0'>
-                                    <Link href="/">
-                                        <a className="text-decoration-none link-primary">
-                                            Ver todos los Hoteles »
-
-                                        </a>
-                                    </Link>
-                                </div>
-
-                            </div>
 
 
                         </div>
@@ -275,9 +228,14 @@ const IndexPage = () => {
             </section>
 
 
-            <section className='bg-viajero'>
+            <section className='bg-viajero pt-md-4'>
                 <div className='container '>
                     <div className='row justify-content-center g-4'>
+                         <div className="col-12 text-center pt-md-4 d-flex justify-content-between container">
+
+                                    <p className="title_section mb-0 text-center text-md-left">De viajero a viajero</p>
+
+                                </div>
                         <div className='col-12'>
                             <div className='viajero_list '>
                                 <Viajero_card
