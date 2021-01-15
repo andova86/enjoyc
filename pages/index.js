@@ -13,10 +13,15 @@ import Personalizado_card from "../components/cards/Personalizado_card";
 import Personalizado_list from "../components/list/Personalizados_list";
 import Viajero_card from "../components/cards/Viajero_card";
 import DestacadosList from "../components/list/Destacados_list";
+import {setInfo} from "../redux/actions/main";
+import {connect} from "react-redux";
+
 
 
 
 const IndexPage = () => {
+
+
 
 
 
@@ -295,4 +300,14 @@ const IndexPage = () => {
     );
 };
 
-export default IndexPage;
+const mapStateToProps = state => ({
+  userInfo: state
+})
+
+const mapDispatchToProps = {
+  setInfo: setInfo
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(IndexPage)
+
+

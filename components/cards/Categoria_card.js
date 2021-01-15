@@ -1,15 +1,60 @@
 import {useState, useEffect} from 'react';
+import {setData, setInfo} from "../../redux/actions/main";
+import {connect, useDispatch} from "react-redux";
 
 
 const Categoria_card = (props) => {
 
-    const [checked, setChecked] = useState(props.ch);
+  const { userInfo } = props;
+
+
     const adb = props.title + "_cat"
 
     useEffect(() => {
         console.log("using effect");
         handleContentLoaded();
     }, []);
+
+  const DATA = [
+        {
+            id: 1,
+            img: '/capitolio.png',
+            title: 'CASA Costa Azul',
+            subtitle: 'Habana',
+            value: '87',
+            text: 'Por noche',
+            category: 'Casas'
+        },
+        {
+            id: 2,
+            img: '/capitolio.png',
+            title: 'CASA Costa Azul',
+            subtitle: 'Cerro',
+            value: '87',
+            text: 'Por noche',
+              category: 'Casas'
+        },
+        {
+            id: 3,
+            img: '/capitolio.png',
+            title: 'CASA Costa Azul',
+            subtitle: 'Vedado',
+            value: '50',
+            text: 'Por noche',
+              category: 'Casas'
+        },
+      {
+            id: 3,
+            img: '/capitolio.png',
+            title: 'CASA Amelia',
+            subtitle: 'Vedado',
+            value: '87',
+            text: 'Por noche',
+            category: 'Casas'
+        }
+    ];
+
+    const dispatch = useDispatch()
 
 
     const handleContentLoaded = () => {
@@ -22,6 +67,9 @@ const Categoria_card = (props) => {
 
                 radio.parentElement.querySelector('.categoria_card_body').classList.add('bg-primary')
                 radio.parentElement.querySelector('.categoria_card_title').classList.add('text-primary')
+
+
+
 
             }
         }
@@ -38,7 +86,11 @@ const Categoria_card = (props) => {
 
             e.target.parentElement.querySelector('.categoria_card_body').classList.add('bg-primary')
             e.target.parentElement.querySelector('.categoria_card_title').classList.add('text-primary')
-            // body.classList.add('bg-info');
+
+            // Esto es para actualizar el nombre de los destacados
+               dispatch(setInfo(props.title))
+            dispatch(setData(DATA))
+
         }
 
 
@@ -92,4 +144,14 @@ const Categoria_card = (props) => {
     );
 };
 
-export default Categoria_card;
+const mapStateToProps = state => ({
+  userInfo: state.main
+});
+
+const mapDispatchToProps = {
+  setInfo: setInfo,
+    setData: setData
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Categoria_card)
+

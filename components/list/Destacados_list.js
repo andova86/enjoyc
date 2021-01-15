@@ -1,43 +1,19 @@
 import Destacado_card from "../cards/Destacado_card";
 import Link from "next/link";
+import {setInfo} from "../../redux/actions/main";
+import {connect} from "react-redux";
+import {useState} from "react"
 
 
 const DestacadosList = (props) => {
 
-    const data = [
-        {
-            id: 1,
-            img: '/hotel.png',
-            title: 'Iberostart Costa Azul',
-            subtitle: 'Varadero',
-            value: '87',
-            text: 'Por noche',
-        },
-        {
-                id: 2,
-                img: '/hotel.png',
-                title: 'Iberostart Costa Azul',
-                subtitle: 'Varadero',
-                value: '87',
-                text: 'Por noche',
-            },
-        {
-                id: 3,
-                img: '/hotel.png',
-                title: 'Iberostart Costa Azul',
-                subtitle: 'Varadero',
-                value: '87',
-                text: 'Por noche',
-            }
-   ];
+    const {userInfo} = props;
 
 
 
 
     const handleSearch = (e) => {
         console.log(e);
-
-
     }
 
     return (
@@ -46,14 +22,17 @@ const DestacadosList = (props) => {
 
             <div className="col-12 text-center pt-4 ">
 
-                <p className="title_section mb-0">{props.name} destacados</p>
+                <p className="title_section mb-0">{userInfo.name} destacados</p>
             </div>
 
             <div className='col-12 '>
                 <div className='destacado_list container-fluid'>
 
                     {
-                        data.map((item) =>
+                        userInfo.data.map(
+
+                            (item) =>
+
 
                             <Destacado_card
                                 img={item.img}
@@ -84,4 +63,14 @@ const DestacadosList = (props) => {
     )
 };
 
-export default DestacadosList;
+
+const mapStateToProps = state => ({
+    userInfo: state.main
+});
+
+const mapDispatchToProps = {
+    setInfo: setInfo
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(DestacadosList)
+

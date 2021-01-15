@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from "next/dist/client/image";
 import Link from "next/link";
 
+
 export default function Layout({children}) {
     return (
         <div>

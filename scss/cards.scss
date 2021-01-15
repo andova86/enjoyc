@@ -102,6 +102,10 @@
   &:hover {
     border: 1px solid $secondary;
     cursor: pointer;
+    -webkit-transition: border 1000ms ease-in;
+    -ms-transition: border 1000ms ease-in;
+    transition: border 1000ms ease-in;
+
   }
 
   &:active {
@@ -284,6 +288,7 @@
 
   &:first-child {
     margin-left: 10px;
+
   }
 
 
@@ -300,8 +305,18 @@
     height: 80px;
     text-align: center;
 
-    &:hover, &:focus, &:active {
+
+    &:focus, &:active {
       background-color: $primary !important;
+      box-shadow: none !important;
+
+    }
+    &:hover{
+       background-color: $primary !important;
+       box-shadow: none !important;
+      -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
 
     }
   }
@@ -662,6 +677,7 @@
   grid-template-areas: "header" "body" "footer";
   box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
+
   @include media-breakpoint-down(sm) {
     margin-right: 10px !important;
   }
