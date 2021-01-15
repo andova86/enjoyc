@@ -43,7 +43,7 @@ export default function Layout({children}) {
 
                             <div className="footer_div_boxsocial_social">
                                 <Link href="/">
-                                    <a>
+                                     <a>
                                         <Image
                                             src="/svg/twitter_blue.svg"
                                             alt="logo"
@@ -54,7 +54,7 @@ export default function Layout({children}) {
 
                                 </Link>
                                 <Link href="/">
-                                    <a className='link-dark'>
+                                    <a >
                                         <Image
                                             src="/svg/facebook_blue.svg"
                                             alt="logo"
@@ -65,7 +65,7 @@ export default function Layout({children}) {
 
                                 </Link>
                                 <Link href="/">
-                                    <a>
+                                    <a >
                                         <Image
                                             src="/svg/instagram_blue.svg"
                                             alt="logo"
@@ -76,7 +76,7 @@ export default function Layout({children}) {
 
                                 </Link>
                                 <Link href="/">
-                                    <a>
+                                    <a >
                                         <Image
                                             src="/svg/linkedin_blue.svg"
                                             alt="logo"
