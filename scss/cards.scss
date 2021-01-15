@@ -30,6 +30,9 @@
       @include media-breakpoint-down(sm) {
 
         justify-content: center !important;
+        padding-bottom: 20px !important;
+         a {
+         margin-right: 5px;}
       }
 
       gap: 10px;
